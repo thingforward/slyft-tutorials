@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "state",
+    "title": "Device state",
+    "description": "",
+    "type": "object",
+    "properties" : {
+      "switch_on": {
+	       "type": "boolean"
+	    },
+	    "led1": {
+        "type": "string",
+        "maxLength": 3
+      }
+    },
+    "required": ["switch_on", "led1" ]
+}

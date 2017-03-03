@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "config",
+    "title": "Device config",
+    "description": "",
+    "type": "object",
+    "properties" : {
+      "lower_bound": {	
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 1023
+      },
+      "upper_bound": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 1023
+      }
+    },
+    "required": ["lower_bound", "upper_bound" ]
+}

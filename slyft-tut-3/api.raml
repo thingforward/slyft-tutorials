@@ -1,0 +1,33 @@
+#%RAML 0.8
+title: tutorial3
+baseUri: coap://api.sylft.io/
+version: 0.1
+schemas:
+  - state: state-schema.json
+  - config: config-schema.json
+/state:
+  get:
+    description: Return device state
+    responses:
+      205:
+        body:
+          application/x-msgpack:
+            schema: state
+/config:
+  get:
+    description: Return device configuration
+    responses:
+      205:
+        body:
+          application/x-msgpack:
+            schema: config
+  post:
+    description: Update device configuration
+    body:
+      application/x-msgpack:
+        schema: config
+    responses:
+      204:
+        description: Changed device configuration
+      406:
+        description: Configuration request not acceptable
