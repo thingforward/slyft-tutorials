@@ -612,3 +612,10 @@ TUT3__tutorial3__post___config
 Changed lower_bound=300
 Changed upper_bound=500
 ```
+
+# References
+
+Contains mpack from github.com/ludocode/mpack, Copyright (c) 2015-2016 Nicholas Fraser MIT License and https://github.com/1248/microcoap from Copyright (c) 2013 Toby Jaffey <toby@1248.io>, MIT license.
+
+
+
